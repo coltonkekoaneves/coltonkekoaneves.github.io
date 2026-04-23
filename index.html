@@ -64,6 +64,35 @@
     a:hover {
       text-decoration: underline;
     }
+    
+    .about {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .bio {
+      flex: 1;
+    }
+    
+    @media (max-width: 700px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .about img {
+        width: 200px;
+        height: 200px;
+      }
+    }
   </style>
 </head>
 
@@ -73,20 +102,40 @@
     <h1>Colton Kekoa Neves</h1>
     <div class="tagline">Writing the Absurd and the Earnest</div>
 
+    <div class="container">
+    <h1>About</h1>
+
     <nav>
+      <a href="/">Home</a>
       <a href="/about.html">About</a>
-      <a href="#">Publications</a>
-      <a href="#">Newsletter</a>
-      <a href="#">Contact</a>
     </nav>
 
-    <div class="section">
-      <h2>Welcome</h2>
-      <p>
-        I write to make you say "oh?" "oh!" "ohhh."  My sincerest hope in life is that I am a better writer than I am a website developer.
-        <em>More work is forthcoming.</em>
-      </p>
+    <div class="section about-section">
+      <h2>About</h2>
+        <div class="about">
+        <img src="Colton Neves_Profile Pic.jpg" alt="Colton Kekoa Neves smiling in front of a bookcase">
+
+          <div class="bio">
+            <p>
+          Native Hawaiian and deeply ridiculous, Colton Kekoa Neves once believed his toy chest could fly 
+          him to new worlds and has chased that high ever since. He is a graduate of the
+          Clarion Writer's Workshop, Viable Paradise, Aspen Words, and Tin House. He barely scrapes through the winters
+          in Cambridge, MA with his husband and floofy cat, Amelia.
+      
+
+            </p>
+
+            <p>
+          There's a novel in the works and several other stories coming out soon, you know, if they get published.
+            </p>
+
+            <p>
+          You can find updates and new writing through my Substack or as @coltontheshaper on X
+            </p>
+          </div>
+      </div>
     </div>
+
 
     <div class="section">
       <h2>Selected Work</h2>
